@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voter Registration</title>
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+
+<body>
+  <h1 align="center" style="color: azure;">Decentralized Voting Using Ethereum Blockchain</h1>
+  <div class="container mt-5">
+    <h1>Voter Registration</h1>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="email"><h3>Email Address</h3></label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <label for="phone"><h3>Phone Number</h3></label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+      </div>
+      <div class="form-group">
+        <label for="address"><h3>Address</h3></label>
+        <textarea class="form-control" id="address" name="address" placeholder="Address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="dob"><h3>Date of Birth</h3></label>
+        <input type="date" class="form-control" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="gender"><h3>Gender</h3></label>
+        <select class="form-control" id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="national-id"><h3>National ID / Aadhaar Number</h3></label>
+        <input type="text" class="form-control" id="national-id" name="national-id" placeholder="National ID / Aadhaar Number" required>
+      </div>
+      <div class="form-group">
+        <label for="password"><h3>Password</h3></label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password"><h3>Confirm Password</h3></label>
+        <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="terms" required>
+        <label class="form-check-label" for="terms">I agree to the terms and conditions and confirm that all information provided is accurate.</label>
+      </div>
+      <button type="submit" class="btn btn-primary"><b>REGISTER AS VOTER</b></button>
+      <div id="error-message" class="error-message"></div>
+    </form>
+    <p>Already registered? <a href="login.html">Login here</a></p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="../js/register.js" type="module"></script>
+</body>
+
+</html>
